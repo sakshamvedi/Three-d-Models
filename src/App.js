@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Canvas } from '@react-three/fiber';
+import Box from './Box';
+import { OrbitControls } from "@react-three/drei"
+import {Model} from "./Car"
+import Navbar from './Navbar';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+
+<div className='items'>
+  <Navbar/>
+ <Canvas className='canvas' style={{height : "500px" , width :"100%"}}>
+  <ambientLight intensity={0.5}/>
+  <OrbitControls/>
+  <directionalLight position={[-2,5,2]} intensity ={-1}/>
+  <Model/>
+ </Canvas>
+ </div>
+  </>
   );
 }
 
