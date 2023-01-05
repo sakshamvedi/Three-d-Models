@@ -17,7 +17,7 @@ export function Model(props) {
       <group position={[-0.06, 1.3, -0.01]} rotation={[Math.PI / 2, 0, 0]}>
         <group rotation={[-Math.PI, 0, 0]}>
           <group position={[0, 0, 0]} rotation={[0.01, 0, 0]} scale={2.47}>
-            <mesh geometry={nodes.Layer_9__0.geometry} material={materials['Scene_-_Root']} />
+      
             <mesh geometry={nodes.Layer_9__0_1.geometry} material={materials['Scene_-_Root']} />
             <mesh geometry={nodes.Layer_9__0_2.geometry} material={materials['Scene_-_Root']} />
             <mesh geometry={nodes.Layer_9__0_3.geometry} material={materials['Scene_-_Root']} />
